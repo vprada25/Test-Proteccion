@@ -14,11 +14,9 @@ const FibNumbers = ({ x, y, n }) => {
       fibo[i] = fibo[i - 1] + fibo[i - 2];
     }
     
-    setFibNumbers(fibo.splice(n))
+    setFibNumbers(fibo)
 
   };
-
-  
 
   return (
     <div className="container-fluid">
@@ -26,7 +24,7 @@ const FibNumbers = ({ x, y, n }) => {
       <h2>semila 1: {x}</h2>
       <h2>semilla 2: {y}</h2>
       <h2>semilla 3: {n}</h2>
-      <h3>{fibNumbers.slice('-')}</h3>
+      <h3>{fibNumbers.slice(',')}</h3>
     </div>
   );
 };
